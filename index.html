@@ -13,18 +13,40 @@
   </head>
     
   <body>
-    <!--Need a collaspiable Navbar that takes you to the other pages.-->
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">RPS Museum</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="rock.html">Rock</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paper.html">Paper</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scissors.html">Scissors</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <div class="container py-4"><!---->
         <header class="pb-3 mb-4 border-bottom">
             <span class="fs-4">Rock, Paper, Scissors? The Age-old Question...</span>
         </header>
-        <div class="p-5 text-center bg-body-tertiary rounded-3 bs-dark-bg-subtle">
-            <div class="container-fluid py-5"><!--Text in container needs to be a darker color.-->
-                <h1 class="display-4 fw-bold">Choose One!</h1>
+        <div class="p-5 text-center bg-body-tertiary rounded-3 bs-dark bg-subtle">
+            <div class="container-fluid py-5 text-dark">
+                <h1 class="display-4 fw-bold text-secondary col-md-6">Choose One!</h1>
                 <p class="col-md-8 fs-4">
                     "Legends speak of an anicent way in which Kingdoms settled rivalries. A game of life and death. Where armies for speared cessly slaughter in favor of a Campion of Skill and Cunning. We look upon these relics of the past to remember the brave warriors of the past"
                 </p>
-                <a href="rock.html"><!-- Images were displaying in the button until i put my stylesheet in a folder.-->
+                <a href="rock.html"> <!--Need the buttons more spaced apart and slightly larger to display the images better -->
                 <button class="btn btn-default btn-image rock">Rock</button>
                 </a>
                 <a href="paper.html">
@@ -36,7 +58,21 @@
             </div>
         </div>
     </div>
-    <!-- Need a Footer with a call to action. Something like thank you for visiting the Museum of Ancient Battle-->
+    
+    <footer class="text-center mt-4 py-3 border-top">
+        <p class="mb-0">Thank you for visiting the Museum of Ancient Battle!</p>
+        <div class="col-md-5 offset-md-1 mb-3"><!--Center the info in this class to display under the p-class-->
+            <form>
+                <h5>Subscribe to Our Newsletter!</h5>
+                <p>Learn all about the Ancient Battle Rights of Rock, Paper, Scissors</p>
+                <div class="d-flex flex-xolumn flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email Address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </footer>
     
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
