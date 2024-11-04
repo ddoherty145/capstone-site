@@ -1,0 +1,20 @@
+.btn-image{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: transparent;
+}
+
+.rock{
+    background-image: url('images/rock.webp');
+}
+
+.paper{
+    background-image: url('images/paper.webp');
+}
+
+.scissors{
+    background-image: url('images/scissors.webp');
+}
