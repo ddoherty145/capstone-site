@@ -1,20 +1,28 @@
-.btn-image{
+.btn-image {
     width: 100px;
     height: 100px;
     background-size: cover;
     background-position: center;
     border: none;
     color: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.rock{
+.btn-image:focus,
+.btn-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rock {
     background-image: url('images/rock.webp');
 }
 
-.paper{
+.paper {
     background-image: url('images/paper.webp');
 }
 
-.scissors{
+.scissors {
     background-image: url('images/scissors.webp');
 }
