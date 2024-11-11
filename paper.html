@@ -11,58 +11,83 @@
     <title>Rock, Paper, Scissors</title>
   </head>
   <body>
-    <!--Navbar-->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">RPS Museum</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="rock.html">Rock</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="paper.html">Paper</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="scissors.html">Scissors</a>
-              </li>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">RPS Museum</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="rock.html">Rock</a></li>
+            <li class="nav-item"><a class="nav-link" href="paper.html">Paper</a></li>
+            <li class="nav-item"><a class="nav-link" href="scissors.html">Scissors</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Main Content -->
+<div class="container my-5">
+  <div class="row">
+    <!-- 2/3 Content: Legacy of Paper -->
+    <div class="col-md-8">
+      <div class="bg-body-tertiary p-4 rounded shadow">
+        <h2 class="display-5 text-center text-light">The Legacy of Paper</h2>
+        <p class="lead text-center">Paper's Rise to Power</p>
+        <!-- Text Container with Improved Readability -->
+        <div class="bg-dark text-light p-4 shadow-sm mx-auto rounded" style="width: 80%; border-radius: 21px 21px 0 0;">
+          <p>In the ancient realm of the Celestial Empire, a wise court official named Cai Lun, a sorcerer of sorts, sought to capture the fleeting whispers of knowledge. He delved into the heart of nature, coaxing forth the essence of mulberry bark, hemp, and rags. With a touch of magic, he transformed these humble materials into a delicate, ethereal substance, a blank canvas upon which the thoughts of humanity could be etched.</p>
+          
+          <p>This wondrous creation, born from the ancient art of papermaking, spread like wildfire across the Silk Road, carried by intrepid merchants and scholars. It reached the lands of Islam, where it was embraced by the Caliphs, who recognized its potential to illuminate the minds of their people. The secrets of papermaking were guarded closely, passed down through generations of skilled artisans.</p>
+          
+          <p>Centuries later, the art of papermaking found its way to the shores of Europe, a gift from the East. It was a revelation, a catalyst for the Renaissance, a time of intellectual and artistic rebirth. The printing press, a marvel of human ingenuity, harnessed the power of paper to spread knowledge far and wide. Books, once rare and precious, became accessible to the masses, igniting a thirst for learning that continues to this day.</p>
+          
+          <p>Paper, the humble servant of the written word, has been a constant companion throughout the ages. It has witnessed the rise and fall of empires, the birth of great ideas, and the evolution of human thought. It is a testament to the power of human creativity, a bridge between the past, present, and future.</p>
+        </div>
+      </div>
+    </div>
+
+
+        <!-- 1/3 Content: Current Event Articles -->
+        <div class="col-md-4">
+          <div class="bg-light p-4 rounded shadow">
+            <h4 class="text-center">Current Events About Paper</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3">Article 1: A major paper discovery...</li>
+              <li class="mb-3">Article 2: How paper changed history...</li>
+              <li>Article 3: New uses of paper in tech...</li>
             </ul>
           </div>
         </div>
-      </nav>
-    <h1>This is the Paper Page!</h1>
+      </div>
 
+      <!-- Bottom Section: Cast Your Vote -->
+      <div class="bg-secondary text-white text-center p-4 rounded mt-5">
+        <h5>Cast Your Vote!</h5>
+        <p>Help continue the legacy of Paper in the RPS Museum.</p>
+        <button class="btn btn-primary">Vote for Paper</button>
+      </div>
+    </div>
 
-
-
-
+    <!-- Footer -->
     <footer class="text-center mt-4 py-3 border-top">
-        <p class="mb-0">Thank you for visiting the Museum of Ancient Battle!</p>
-        <div class="d-flex flex-column align-items-center col-md-5 mx-auto mb-3">
-            <form>
-                <h5>Subscribe to Our Newsletter!</h5>
-                <p>Learn all about the Ancient Battle Rights of Rock, Paper, Scissors</p>
-                <div class="d-flex flex-xolumn flex-sm-row w-100 gap-2">
-                    <label for="newsletter1" class="visually-hidden">Email Address</label>
-                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                    <button class="btn btn-primary" type="button">Subscribe</button>
-                </div>
-            </form>
-        </div>
+      <p class="mb-0">Thank you for visiting the Museum of Ancient Battle!</p>
+      <div class="d-flex flex-column align-items-center col-md-5 mx-auto mb-3">
+        <form>
+          <h5>Subscribe to Our Newsletter!</h5>
+          <p>Learn all about the Ancient Battle Rights of Rock, Paper, Scissors</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email Address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
     </footer>
-    
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
